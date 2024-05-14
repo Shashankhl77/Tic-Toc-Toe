@@ -14,29 +14,21 @@ let pattren= [
   [0,4,8],
   [2,4,6],
 ];
-
 let disabled=()=>{
      for (const box of boxes) {
-
       box.disabled = true;
-      
      }
 };
 let enable=()=>{
   for (const box of boxes) {
-
     box.disabled = false;
     box.innerText = "";
    }
 }
-
 const game=()=>{
   turn0= true;
   enable();
   m.classList.add("hide");
- 
-
-
 };
 boxes.forEach(box=>{
   box.addEventListener("click",()=>{
@@ -56,7 +48,6 @@ turn0 = false;
 const show= (win)=>{
 m.classList.remove("hide");
 disabled();
-
 };
 
 const winner= ()=>{
@@ -69,11 +60,8 @@ const winner= ()=>{
       if(pos1==pos2 && pos2==pos3){
         console.log("Winner");
         show();
-
-      }
-      
+      }  
     }
-
   };
 };
 
